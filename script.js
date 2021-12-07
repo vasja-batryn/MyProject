@@ -50,7 +50,7 @@ const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", function () {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollTop > navScrollTop) {
-    navbar.style.top = "-80px";
+    navbar.style.top = "-82px";
     navbar.style.transition = "all 0.2s ease-in-out";
   }
   else {
