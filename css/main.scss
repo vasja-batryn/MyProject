@@ -397,7 +397,7 @@ body {
 
     .conta .controls button {
         position: absolute;
-        left: 35.01%;
+        left: 35.02%;
         top: 47.5%;
         z-index: 100;
     }
@@ -420,7 +420,7 @@ body {
     .first-fut {
         width: 100%;
         flex-wrap: wrap;
-        margin-top: 100px;
+        
         display: flex;
         height: 900px;
         justify-content: center;
@@ -446,21 +446,64 @@ body {
         }
 
         .fut-info {
-
+            margin-top: 100px;
             width: 100%;
             display: flex;
             justify-content: space-between;
 
+            .colo{
+                width: 200px;
+                height: 200px;
+               
+                border-radius: 500px;
+            }
+
+            .uno{
+ background-image: url(../img/fut1.png);
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+
+
+            }
+            .dos{
+ background-image: url(../img/fut2.png);
+ background-size:cover;
+ background-repeat: no-repeat;
+ background-position: center;
+            }
+            .tres{
+                 background-image: url(../img/fut3.png);
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .quatro{
+ background-image: url(../img/fut4.png);
+ background-size:cover;
+ background-repeat: no-repeat;
+ background-position: center;
+            }
+
             .info-fut {
+                
+                display: flex;
                 width: 350px;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
 
                 .fut-txtinfo {
+                   
+                    text-align: center;
                     h4 {
                         font-size: 43px;
                         line-height: 50px;
+                         margin-top: 60px;
                     }
 
                     p {
+                        margin-top: 40px;
                         font-size: 23px;
                         line-height: 27px;
                     }
@@ -497,7 +540,7 @@ body {
 }
 
 footer {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.13);
     height: 300px;
 }
 

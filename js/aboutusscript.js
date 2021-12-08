@@ -19,7 +19,7 @@ let pageSlider = new Swiper('.page', {
 		sensitivity: 1,
 	},
 	watchOverflow: true,
-	speed: 600,
+	speed: 900,
 	observer: true,
 	observeParents: true,
 	observeSlideChildren: true,

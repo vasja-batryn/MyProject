@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
 .navbar {
   background-color: rgba(255, 255, 255, 0.637);
   padding-top: 10px;
@@ -61,9 +63,11 @@
       margin-top: 400px;
       z-index: 2; }
       .wrapper .page .abus h1 {
-        font-size: 100px;
+        font-size: 120px;
         font-family: 'Roboto', sans-serif;
-        font-weight: 500; }
+        font-weight: 700;
+        word-spacing: 50px;
+        color: rgba(0, 0, 0, 0.644); }
     .wrapper .page .screen {
       flex: 1 0 100%;
       position: relative; }
@@ -128,8 +132,7 @@
 .screen__title {
   font-size: 50px;
   color: black;
-  margin: 0px 0px 30px 0px;
-  display: inline-block; }
+  margin: 0px 0px 30px 0px; }
 
 .screen__title_bg {
   padding: 15px; }
@@ -174,5 +177,57 @@
 
   .screen__text {
     font-size: 16px; } }
+.main_block {
+  margin-top: 200px; }
+
+.block_block {
+  justify-content: center;
+  height: 300px;
+  width: 1700px; }
+  .block_block .block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.075);
+    border: 2px solid white;
+    border-radius: 10px; }
+    .block_block .block h4 {
+      margin-top: -50px;
+      font-size: 100px;
+      font-family: 'Oswald'; }
+    .block_block .block h5 {
+      margin-top: -150px;
+      font-family: 'Roboto';
+      font-size: 15px;
+      font-weight: 500; }
+
+.krug_krug {
+  justify-content: center;
+  height: 200px;
+  width: 1700px; }
+  .krug_krug .krug {
+    margin-top: -50px;
+    flex-wrap: nowrap;
+    width: 140px;
+    height: 140px;
+    border-radius: 100px; }
+
+.one {
+  margin-top: -50px;
+  width: 450px;
+  display: flex;
+  justify-content: center; }
+
+.three {
+  background-image: url(../img/comm2.png); }
+
+.two {
+  background-image: url(../img/comm1.png); }
+
+.four {
+  background-image: url(../img/comm3.png); }
 
 /*# sourceMappingURL=aboutus.css.map */

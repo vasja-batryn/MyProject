@@ -241,7 +241,7 @@ body {
       outline: none; }
   .container .conta .controls button {
     position: absolute;
-    left: 35.01%;
+    left: 35.02%;
     top: 47.5%;
     z-index: 100; }
   .container .conta .controls .down {
@@ -255,7 +255,6 @@ body {
   .container .first-fut {
     width: 100%;
     flex-wrap: wrap;
-    margin-top: 100px;
     display: flex;
     height: 900px;
     justify-content: center; }
@@ -274,17 +273,50 @@ body {
         line-height: 32px;
         text-align: center; }
     .container .first-fut .fut-info {
+      margin-top: 100px;
       width: 100%;
       display: flex;
       justify-content: space-between; }
+      .container .first-fut .fut-info .colo {
+        width: 200px;
+        height: 200px;
+        border-radius: 500px; }
+      .container .first-fut .fut-info .uno {
+        background-image: url(../img/fut1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; }
+      .container .first-fut .fut-info .dos {
+        background-image: url(../img/fut2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; }
+      .container .first-fut .fut-info .tres {
+        background-image: url(../img/fut3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; }
+      .container .first-fut .fut-info .quatro {
+        background-image: url(../img/fut4.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; }
       .container .first-fut .fut-info .info-fut {
-        width: 350px; }
-        .container .first-fut .fut-info .info-fut .fut-txtinfo h4 {
-          font-size: 43px;
-          line-height: 50px; }
-        .container .first-fut .fut-info .info-fut .fut-txtinfo p {
-          font-size: 23px;
-          line-height: 27px; }
+        display: flex;
+        width: 350px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; }
+        .container .first-fut .fut-info .info-fut .fut-txtinfo {
+          text-align: center; }
+          .container .first-fut .fut-info .info-fut .fut-txtinfo h4 {
+            font-size: 43px;
+            line-height: 50px;
+            margin-top: 60px; }
+          .container .first-fut .fut-info .info-fut .fut-txtinfo p {
+            margin-top: 40px;
+            font-size: 23px;
+            line-height: 27px; }
     .container .first-fut .fut-button .button-fut {
       background-color: black;
       color: white;
@@ -301,7 +333,7 @@ body {
       color: white; }
 
 footer {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.13);
   height: 300px; }
 
 ::-webkit-scrollbar {
