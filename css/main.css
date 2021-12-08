@@ -51,7 +51,8 @@ body {
       font-size: calc(30px + 80 * ((100vw - 320px) / 1920));
       margin-bottom: 50px; }
     .container header .header-text h5 {
-      font-size: calc(14px + 10 * ((100vw - 320px) / 1920)); }
+      font-size: calc(14px + 10 * ((100vw - 320px) / 1920));
+      width: 700px; }
     .container header .button-header {
       transform: translate(0px, 120%);
       opacity: 0;
