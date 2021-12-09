@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
+.navbar {
+  background-color: rgba(255, 255, 255, 0.637);
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .navbar .nav-item {
+    display: flex;
+    padding-left: 80px; }
+    .navbar .nav-item .nav-link {
+      display: flex;
+      align-items: center; }
+    .navbar .nav-item a {
+      font-size: 20px; }
+  .navbar .but {
+    display: flex;
+    height: 50px;
+    width: 350px;
+    margin-left: 250px;
+    justify-content: end; }
+  .navbar .btn-su {
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-left: 20px;
+    padding: 5px 40px;
+    box-shadow: none; }
+  .navbar .bt {
+    background-color: black;
+    color: white; }
+
+.content {
+  margin-top: 85px;
+  height: 850px; }
+  .content .product-one {
+    height: 450px;
+    width: 100%; }
+  .content .product-two {
+    height: 450px;
+    width: 100%; }
+  .content .block {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+    .content .block h4 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 40px; }
+  .content .q {
+    transition: background 0.2s ease; }
+  .content .q:hover {
+    transition: background-image 2s ease;
+    background-image: url(../img/site1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .content .q:hover h4 {
+      display: none; }
+  .content .w:hover {
+    background-image: url(../img/site2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .content .w:hover h4 {
+      display: none; }
+  .content .e:hover {
+    background-image: url(../img/site3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .content .e:hover h4 {
+      display: none; }
+  .content .r:hover {
+    background-image: url(../img/site4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .content .r:hover h4 {
+      display: none; }
+  .content .t:hover {
+    background-image: url(../img/site5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .content .t:hover h4 {
+      display: none; }
+  .content .y:hover {
+    background-image: url(../img/site6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .content .y:hover h4 {
+      display: none; }
+  .content .u:hover {
+    background-image: url(../img/site7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .content .u:hover h4 {
+      display: none; }
+  .content .i:hover {
+    background-image: url(../img/site8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .content .i:hover h4 {
+      display: none; }
+
+footer {
+  margin-top: 27px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.13);
+  height: 300px; }
+  footer .futer {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center; }
+  footer .logo-footer {
+    width: 100%;
+    display: flex; }
+    footer .logo-footer img {
+      margin-left: -35px; }
+  footer .footer-nav {
+    width: 100%;
+    justify-content: center; }
+    footer .footer-nav a:hover,
+    footer .footer-nav a:focus {
+      color: #0000004d;
+      text-decoration: none; }
+  footer .footer-soc {
+    width: 100%; }
+  footer .footer-info {
+    text-align: center; }
+    footer .footer-info h5 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px; }
+  footer a {
+    margin-left: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black; }
+
+::-webkit-scrollbar {
+  width: 14px;
+  background-color: transparent; }
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 0.616); }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.336); }
+
+/*# sourceMappingURL=ourproduct.css.map */
