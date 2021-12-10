@@ -32,11 +32,59 @@ body {
     border: 2px solid black;
     margin-left: 20px;
     padding: 5px 40px;
-    box-shadow: none; }
+    box-shadow: none;
+    transition: all 500ms ease; }
   .navbar .bt {
     background-color: black;
     color: white; }
+    .navbar .bt:hover {
+      background: rgba(0, 0, 0, 0);
+      color: black; }
+  .navbar .ua:hover {
+    background: black;
+    color: white; }
 
+.fill li a {
+  position: relative;
+  color: white;
+  transition: all 2s;
+  border-radius: 5px; }
+
+.fill li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+  border-radius: 5px; }
+
+.fill li a:hover {
+  border-radius: 5px;
+  z-index: 1; }
+
+.fill li a:hover:after {
+  z-index: -10;
+  animation: fill 0.8s forwards;
+  opacity: 1;
+  border-radius: 5px; }
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px; }
+  50% {
+    width: 100%;
+    height: 1px; }
+  100% {
+    width: 60%;
+    height: 3%;
+    background: #333; } }
 .navbar._active {
   transform: translate(0px, 0px); }
 

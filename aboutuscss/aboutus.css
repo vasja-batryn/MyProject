@@ -4,7 +4,8 @@
   background-color: rgba(255, 255, 255, 0.637);
   padding-top: 10px;
   padding-left: 50px;
-  padding-right: 50px; }
+  padding-right: 50px;
+  /* Keyframes */ }
   .navbar .nav-item {
     display: flex;
     padding-left: 80px; }
@@ -30,7 +31,42 @@
   .navbar .bt {
     background-color: black;
     color: white; }
-
+  .navbar .fill li a {
+    position: relative;
+    color: white;
+    transition: all 2s;
+    border-radius: 5px; }
+  .navbar .fill li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+    border-radius: 5px; }
+  .navbar .fill li a:hover {
+    border-radius: 5px;
+    z-index: 1; }
+  .navbar .fill li a:hover:after {
+    z-index: -10;
+    animation: fill 0.8s forwards;
+    opacity: 1;
+    border-radius: 5px; }
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px; }
+  50% {
+    width: 100%;
+    height: 1px; }
+  100% {
+    width: 60%;
+    height: 3%;
+    background: #333; } }
 .wrapper {
   min-height: 100%;
   opacity: 0;
@@ -240,5 +276,43 @@ video {
   top: 0;
   bottom: 0;
   z-index: -1; }
+
+footer {
+  margin-top: 27px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.13);
+  height: 300px; }
+  footer .futer {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center; }
+  footer .logo-footer {
+    width: 100%;
+    display: flex; }
+    footer .logo-footer img {
+      margin-left: -35px; }
+  footer .footer-nav {
+    width: 100%;
+    justify-content: center; }
+    footer .footer-nav a:hover,
+    footer .footer-nav a:focus {
+      color: #0000004d;
+      text-decoration: none; }
+  footer .footer-soc {
+    width: 100%; }
+  footer .footer-info {
+    text-align: center; }
+    footer .footer-info h5 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px; }
+  footer a {
+    margin-left: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black; }
 
 /*# sourceMappingURL=aboutus.css.map */
