@@ -34,15 +34,17 @@ body {
     padding: 5px 40px;
     box-shadow: none;
     transition: all 500ms ease; }
-  .navbar .bt {
-    background-color: black;
-    color: white; }
-    .navbar .bt:hover {
-      background: rgba(0, 0, 0, 0);
-      color: black; }
-  .navbar .ua:hover {
-    background: black;
-    color: white; }
+
+.bt {
+  background-color: black;
+  color: white; }
+  .bt:hover {
+    background: rgba(0, 0, 0, 0);
+    color: black; }
+
+.ua:hover {
+  background: black;
+  color: white; }
 
 .fill li a {
   position: relative;
@@ -73,7 +75,6 @@ body {
   opacity: 1;
   border-radius: 5px; }
 
-/* Keyframes */
 @-webkit-keyframes fill {
   0% {
     width: 0%;
@@ -89,7 +90,9 @@ body {
   transform: translate(0px, 0px); }
 
 .container {
-  max-width: 90%; }
+  max-width: 90%;
+  /*Header*/
+  /*Slider*/ }
   .container header {
     margin-top: 100px;
     align-items: center; }
@@ -104,7 +107,12 @@ body {
     .container header .button-header {
       transform: translate(0px, 120%);
       opacity: 0;
-      transition: all 0.8s ease 0s;
+      transition: all 0.8s ease 0s; }
+    .container header .button-header._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.8s; }
+    .container header .btnhd {
       background-color: black;
       color: white;
       margin-top: 30px;
@@ -114,14 +122,19 @@ body {
       border: 2px solid black;
       padding: 5px 40px;
       box-shadow: none; }
-    .container header .button-header._active {
-      transform: translate(0px, 0px);
-      opacity: 1;
-      transition: all 0.8s ease 0.8s; }
     .container header .bh {
       margin-left: 20px;
       background-color: white;
       color: black; }
+    .container header .bh:hover {
+      background: black;
+      color: white; }
+    .container header .bu {
+      background-color: black;
+      color: white; }
+      .container header .bu:hover {
+        background: rgba(0, 0, 0, 0);
+        color: black; }
     .container header .carousel {
       margin-left: 118px;
       margin-top: 5%;
@@ -383,6 +396,9 @@ body {
       margin-left: 20px;
       background-color: black;
       color: white; }
+      .container .first-fut .fut-button .bt:hover {
+        background: rgba(0, 0, 0, 0);
+        color: black; }
 
 footer {
   margin-top: 27px;
@@ -422,6 +438,52 @@ footer {
     cursor: pointer;
     color: black; }
 
+.modal_sign_in {
+  width: 100%;
+  max-width: 700px;
+  justify-content: center; }
+  .modal_sign_in .modal-content {
+    position: relative;
+    border-radius: 0;
+    border: none;
+    min-width: 1200px;
+    min-height: 700px;
+    background-size: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); }
+    .modal_sign_in .modal-content .btn-close {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 2; }
+  .modal_sign_in h4 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px; }
+.modal .margin_form {
+  margin-bottom: 20px; }
+  .modal .margin_form.alt {
+    margin-top: 35px; }
+.modal .png {
+  object-fit: cover;
+  height: 500px;
+  margin-left: 20px; }
+.modal input {
+  max-height: 45px;
+  padding-left: 12px; }
+.modal label {
+  padding-top: 10px;
+  padding-left: 12px; }
+.modal form {
+  margin-top: 30px; }
+.modal .form-control {
+  border-radius: 0;
+  border: 1px solid #c4c4c4; }
+  .modal .form-control:focus {
+    border: 1px solid;
+    outline: none;
+    box-shadow: none; }
+
+/*Scroll*/
 ::-webkit-scrollbar {
   width: 14px;
   background-color: transparent; }
