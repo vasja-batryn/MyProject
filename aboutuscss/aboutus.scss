@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    
+
 }
 
 
@@ -13,16 +13,16 @@ body {
     padding-left: 50px;
     padding-right: 50px;
 
-.collapse {
+    .collapse {
 
-    .navbar-nav {
+        .navbar-nav {
 
-        display: flex;
-        padding-left: 180px;
-        justify-content: space-between;
+            display: flex;
+            padding-left: 180px;
+            justify-content: space-between;
 
+        }
     }
-}
 
     .nav-item {
         display: flex;
@@ -46,7 +46,7 @@ body {
 
         height: 50px;
         width: 350px;
-        
+
         justify-content: end;
 
 
@@ -402,24 +402,31 @@ body {
     background-image: url(../img/comm3.png);
 }
 
-.block_story{
+.block_story {
     margin-top: -100px;
     width: 700px;
 
-    h4{
-font-family: Roboto;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 35px;
-color: rgba(0, 0, 0, 0.507);
-    }
-    span{
-        font-size: 25px;
-        font-weight: 800;
-        color: black;
-    }
+
 }
+
+.decortxt li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.507);
+    list-style: none;
+}
+
+span {
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+}
+
+
+
 
 
 

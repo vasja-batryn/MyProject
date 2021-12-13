@@ -10,26 +10,26 @@ body {
 
 .navbar {
     background-color: rgba(255, 255, 255, 0.637);
-    
+
     padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
     transform: translate(0px, -90%);
     transition: all 0.6s ease 0s;
 
-  .collapse{
-    
-    .navbar-nav{
-        
-        display: flex;
-        padding-left: 180px;
-        justify-content: space-between;
-        
+    .collapse {
+
+        .navbar-nav {
+
+            display: flex;
+            padding-left: 180px;
+            justify-content: space-between;
+
+        }
     }
-  }
 
     .nav-item {
-        
+
         display: flex;
         padding-left: 80px;
 
@@ -40,23 +40,23 @@ body {
 
         a {
             font-size: calc(14px + 6 * ((100vw - 320px) / 1920));
-            
+
         }
     }
 
 
 
     .but {
-        
+
         display: flex;
         height: 50px;
         width: 350px;
-        
+
         justify-content: end;
     }
 
     @media (max-width: 991.98px) {
-        .but{
+        .but {
             display: none;
         }
     }
@@ -72,7 +72,7 @@ body {
         transition: all 500ms ease;
     }
 
-    
+
 
 }
 
@@ -175,7 +175,7 @@ body {
             transform: translate(0px, 120%);
             opacity: 0;
             transition: all 0.8s ease 0s;
-            
+
         }
 
         .button-header._active {
@@ -184,7 +184,7 @@ body {
             transition: all 0.8s ease 0.8s;
         }
 
-        .btnhd{
+        .btnhd {
             background-color: black;
             color: white;
             margin-top: 30px;
@@ -342,8 +342,12 @@ body {
         margin-top: 150px;
 
         img {
-            width: 810px;
-            height: 448px;
+
+            max-height: 448px;
+
+            width: 100%;
+            max-width: 810px;
+            height: 100%;
         }
 
         .com-img {
@@ -363,16 +367,16 @@ body {
                 margin-top: 80px;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 65px;
+                font-size: calc(30px + 30 * ((100vw - 320px) / 1920));
                 line-height: 79px;
             }
 
             p {
                 font-style: normal;
                 font-weight: normal;
-                font-size: 20px;
-                line-height: 33px;
-                width: 750px;
+                font-size: calc(10px + 10 * ((100vw - 320px) / 1920));
+                line-height: 25px;
+                width: 80%;
                 color: #AFAFB0;
             }
         }
@@ -443,9 +447,7 @@ body {
     }
 
     .main-slide>div {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+
         height: 100%;
         width: 100%;
     }
@@ -495,7 +497,7 @@ body {
         width: 100%;
         flex-wrap: wrap;
         display: flex;
-        height: 900px;
+        min-height: 900px;
         justify-content: center;
 
         .zag {
@@ -518,7 +520,10 @@ body {
             }
         }
 
+
+
         .fut-info {
+
             margin-top: 100px;
             width: 100%;
             display: flex;
@@ -528,13 +533,10 @@ body {
                 width: 200px;
                 height: 200px;
                 border-radius: 500px;
-                transform: scale(0);
-                transition: all 1s ease 0s;
+
             }
 
-            .colo._active {
-                transform: scale(1);
-            }
+
 
             .uno {
                 background-image: url(../img/fut1.png);
@@ -579,14 +581,14 @@ body {
                     text-align: center;
 
                     h4 {
-                        font-size: 43px;
+                        font-size: calc(28px + 15 * ((100vw - 320px) / 1920));
                         line-height: 50px;
                         margin-top: 60px;
                     }
 
                     p {
                         margin-top: 40px;
-                        font-size: 23px;
+                        font-size: calc(13px + 10 * ((100vw - 320px) / 1920));
                         line-height: 27px;
                     }
                 }
@@ -611,17 +613,17 @@ body {
                 background-color: black;
                 color: white;
 
-                 &:hover {
-                     background: rgba(0, 0, 0, 0);
-                     color: black;
-                 }
+                &:hover {
+                    background: rgba(0, 0, 0, 0);
+                    color: black;
+                }
             }
-           
 
-               
-            }
+
+
         }
     }
+}
 
 
 footer {
@@ -629,6 +631,7 @@ footer {
     display: flex;
     background-color: rgba(0, 0, 0, 0.13);
     height: 300px;
+    width: 100%;
 
     .futer {
         width: 100%;
@@ -686,11 +689,12 @@ footer {
 }
 
 .modal {
-background-color: rgba(0, 0, 0, 0.322);
+    background-color: rgba(0, 0, 0, 0.322);
+
     &_sign_in {
         width: 100%;
         max-width: 700px;
-justify-content: center;
+        justify-content: center;
 
         & .modal-content {
             background-color: rgba(255, 255, 255, 0.849);
@@ -699,7 +703,7 @@ justify-content: center;
             border: none;
             min-width: 900px;
             min-height: 600px;
-           
+
             background-size: cover;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 
@@ -712,12 +716,12 @@ justify-content: center;
         }
 
         h4 {
-           
+
             font-weight: bold;
             font-size: 36px;
             line-height: 44px;
 
-         
+
         }
     }
 
@@ -725,61 +729,62 @@ justify-content: center;
         display: flex;
         justify-content: end;
         margin-bottom: 20px;
-        
-        
+
+
         &.alt {
             margin-top: 35px;
         }
     }
 
-    .wel{
-     
-        height:500px;
+    .wel {
 
-        .logomod{
+        height: 500px;
+
+        .logomod {
             margin: 30px 50px;
         }
 
-        .textmod{
+        .textmod {
             display: flex;
             margin-left: 50px;
             margin-top: 100px;
-            h3{
-               font-family: 'Roboto',
-               sans-serif;
-                  font-weight: bold;
-                  font-size: 80px;
+
+            h3 {
+                font-family: 'Roboto',
+                    sans-serif;
+                font-weight: bold;
+                font-size: 80px;
 
             }
         }
 
-        hr{
+        hr {
             margin-left: 50px;
             width: 60px;
             height: 3px;
         }
 
-        p{
+        p {
             margin-top: 30px;
             margin-left: 50px;
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 17px;
-          line-height: 23px;
-          color: rgba(0, 0, 0, 0.404);
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 23px;
+            color: rgba(0, 0, 0, 0.404);
         }
     }
 
     input {
         max-height: 45px;
-         
+
 
     }
 
     label {
         padding-top: 10px;
-        
+
     }
 
     form {
@@ -795,10 +800,10 @@ justify-content: center;
         border-right: none;
         border-bottom: 1px solid black;
         margin-bottom: 20px;
-        
+
 
         &:focus {
-             
+
             outline: none;
             box-shadow: none;
         }
@@ -819,54 +824,59 @@ justify-content: center;
             color: white;
         }
     }
-    .with{
+
+    .with {
         display: flex;
         justify-content: space-between;
     }
 
-    .modbut{
+    .modbut {
         margin-top: 20px;
         width: 110px;
         height: 30px;
         border-radius: 10px;
         font-size: 15px;
         padding: 0;
-       
-        &:hover{
+
+        &:hover {
             border-color: transparent;
-             background: transparent;
-             color: black;
-             border: 2px solid;
+            background: transparent;
+            color: black;
+            border: 2px solid;
         }
     }
 
-    .face{
+    .face {
         background-color: #1B74E4;
         color: white;
-        
+
         &:hover {
             border-color: #1B74E4;
-            
+
         }
     }
-    .twit{
+
+    .twit {
         background-color: #5DA9DD;
         color: white;
+
         &:hover {
             border-color: #5DA9DD;
-            
+
         }
     }
-    .apple{
+
+    .apple {
         background-color: black;
         color: white;
+
         &:hover {
             border-color: black;
-            
-            
+
+
         }
     }
-    
+
 }
 
 /*Scroll*/

@@ -282,17 +282,20 @@ body {
 .block_story {
   margin-top: -100px;
   width: 700px; }
-  .block_story h4 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 35px;
-    color: rgba(0, 0, 0, 0.507); }
-  .block_story span {
-    font-size: 25px;
-    font-weight: 800;
-    color: black; }
+
+.decortxt li {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: rgba(0, 0, 0, 0.507);
+  list-style: none; }
+
+span {
+  font-size: 25px;
+  font-weight: 800;
+  color: black; }
 
 video {
   width: 100vw;
