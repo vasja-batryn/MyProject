@@ -1,13 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
 
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
 .navbar {
     background-color: rgba(255, 255, 255, 0.637);
     padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
 
+.collapse {
 
+    .navbar-nav {
+
+        display: flex;
+        padding-left: 180px;
+        justify-content: space-between;
+
+    }
+}
 
     .nav-item {
         display: flex;
@@ -19,7 +34,8 @@
         }
 
         a {
-            font-size: 20px;
+            font-size: calc(14px + 6 * ((100vw - 320px) / 1920));
+            font-weight: 400;
         }
     }
 
@@ -30,10 +46,16 @@
 
         height: 50px;
         width: 350px;
-        margin-left: 250px;
+        
         justify-content: end;
 
 
+    }
+
+    @media (max-width: 991.98px) {
+        .but {
+            display: none;
+        }
     }
 
     .btn-su {
@@ -47,8 +69,17 @@
     }
 
     .bt {
-
         background-color: black;
+        color: white;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0);
+            color: black;
+        }
+    }
+
+    .ua:hover {
+        background: black;
         color: white;
     }
 
@@ -390,6 +421,8 @@ color: rgba(0, 0, 0, 0.507);
     }
 }
 
+
+
 video {
     width: 100vw;
     height: 100vh;
@@ -460,6 +493,197 @@ footer {
         text-decoration: none;
         cursor: pointer;
         color: black;
+    }
+
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.322);
+
+    &_sign_in {
+        width: 100%;
+        max-width: 700px;
+        justify-content: center;
+
+        & .modal-content {
+            background-color: rgba(255, 255, 255, 0.849);
+            position: relative;
+            border-radius: 0;
+            border: none;
+            min-width: 900px;
+            min-height: 600px;
+
+            background-size: cover;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+            .btn-close {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                z-index: 2;
+            }
+        }
+
+        h4 {
+
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 44px;
+
+
+        }
+    }
+
+    .margin_form {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 20px;
+
+
+        &.alt {
+            margin-top: 35px;
+        }
+    }
+
+    .wel {
+
+        height: 500px;
+
+        .logomod {
+            margin: 30px 50px;
+        }
+
+        .textmod {
+            display: flex;
+            margin-left: 50px;
+            margin-top: 100px;
+
+            h3 {
+                font-family: 'Roboto',
+                    sans-serif;
+                font-weight: bold;
+                font-size: 80px;
+
+            }
+        }
+
+        hr {
+            margin-left: 50px;
+            width: 60px;
+            height: 3px;
+        }
+
+        p {
+            margin-top: 30px;
+            margin-left: 50px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 23px;
+            color: rgba(0, 0, 0, 0.404);
+        }
+    }
+
+    input {
+        max-height: 45px;
+
+
+    }
+
+    label {
+        padding-top: 10px;
+
+    }
+
+    form {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .form-control {
+        background-color: transparent;
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+
+
+        &:focus {
+
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    .btmod {
+        background-color: transparent;
+        color: black;
+        width: 180px;
+        height: 55px;
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: 5px 40px;
+        box-shadow: none;
+
+        &:hover {
+            background: black;
+            color: white;
+        }
+    }
+
+    .with {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .modbut {
+        margin-top: 20px;
+        width: 110px;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 15px;
+        padding: 0;
+
+        &:hover {
+            border-color: transparent;
+            background: transparent;
+            color: black;
+            border: 2px solid;
+        }
+    }
+
+    .face {
+        background-color: #1B74E4;
+        color: white;
+
+        &:hover {
+            border-color: #1B74E4;
+
+        }
+    }
+
+    .twit {
+        background-color: #5DA9DD;
+        color: white;
+
+        &:hover {
+            border-color: #5DA9DD;
+
+        }
+    }
+
+    .apple {
+        background-color: black;
+        color: white;
+
+        &:hover {
+            border-color: black;
+
+
+        }
     }
 
 }

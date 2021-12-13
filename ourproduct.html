@@ -23,7 +23,7 @@
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse  justify-content-end " id="navbarNav">
+    <div class="collapse navbar-collapse  justify-content-evenly " id="navbarNav">
       <ul class="navbar-nav fill">
         <li class="nav-item ">
           <a class="nav-link" href="../MyProject/index.html">Home</a>
@@ -37,12 +37,14 @@
         <li class="nav-item">
           <a class="nav-link" href="../MyProject/index.html">Contacts</a>
         </li>
-        <div class="but col-5">
-          <button type="button" class="btn bt btn-su ">Sign in</button>
-          <button type="button" class="btn btn-su">Sign up</button>
-        </div>
+        
       </ul>
     </div>
+
+    <div class="but">
+          <button type="button" class="btn bt btn-su " data-bs-toggle="modal" data-bs-target="#SignIn">Sign in</button>
+          <button type="button" class="btn btn-su ua" data-bs-toggle="modal" data-bs-target="#SignUp">Sign up</button>
+        </div>
   </nav>
 
   <div class="wrapper">
@@ -143,6 +145,121 @@
       <div class="page__pagination"></div>
   </div>
   </main>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal modalka  fade" id="SignIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modalka_sign_in modal-dialog-centered">
+      <div class="modal-content sup ">
+        <button type="button" class="btn-close clb" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body p-0">
+          <div class="row w-100 align-items-center">
+            <div class="wel col-6 d-none d-md-block">
+              <div class="logomod">
+                <img class="" src="../MyProject/img/logo.svg" style="width: 55px; height: 55px;" alt="logo">
+              </div>
+
+              <div class="textmod">
+                <h3>Welcome!</h3>
+              </div>
+             <hr>
+             <p>We are glad that you have chosen our company, please log in or register so we can contact you.</p>
+            </div>
+            <div class="col-md-6 col-12 text-center px-3 px-md-5 mt-5">
+              <h4>Sign in</h4>
+              <form action="" method="post">
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="text" placeholder="Name">
+                  <label for="text">Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="text" placeholder="The company name">
+                  <label for="text">The company name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="Input" placeholder="name@example.com">
+                  <label for="Input">Email</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="Password" placeholder="Password">
+                  <label for="Password">Password</label>
+                </div>
+
+             
+                <div class="margin_form alt">
+                  <input type="submit" name="" value="Sign in" class="btn btmod w-100">
+                </div>
+              </form>
+
+               <h5>Or sign in with</h5>
+               <div class="with">
+                 <button type="button" class="btn modbut  face">Facebook</button>
+                 <button type="button" class="btn  modbut twit ">Twitter</button>
+                 <button type="button" class="btn   modbut apple">Apple ID</button>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Modal up -->
+  <div class="modal modalka fade" id="SignUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modalka_sign_in modal-dialog-centered">
+      <div class="modal-content sup ">
+        <button type="button" class="btn-close clb" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body p-0">
+          <div class="row w-100 align-items-center">
+            <div class="wel col-6 d-none d-md-block">
+              <div class="logomod">
+                <img class="" src="../MyProject/img/logo.svg" style="width: 55px; height: 55px;" alt="logo">
+              </div>
+
+              <div class="textmod">
+                <h3>Welcome!</h3>
+              </div>
+             <hr>
+             <p>We are glad that you have chosen our company, please log in or register so we can contact you.</p>
+            </div>
+            <div class="col-md-6 col-12 text-center px-3 px-md-5 mt-5">
+              <h4>Sign up</h4>
+              <form action="" method="post">
+
+                
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="Input" placeholder="name@example.com">
+                  <label for="Input">Email</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="Password" placeholder="Password">
+                  <label for="Password">Password</label>
+                </div>
+
+             
+                <div class="margin_form alt">
+                  <input type="submit" name="" value="Sign in" class="btn btmod w-100">
+                </div>
+              </form>
+
+               <h5>Or sign up with</h5>
+               <div class="with">
+                 <button type="button" class="btn modbut  face">Facebook</button>
+                 <button type="button" class="btn  modbut twit ">Twitter</button>
+                 <button type="button" class="btn   modbut apple">Apple ID</button>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Modal 1 -->

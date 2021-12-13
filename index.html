@@ -26,7 +26,7 @@
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse  justify-content-end col-7 " id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-evenly " id="navbarNav">
       <ul class="navbar-nav fill">
         <li class="nav-item ">
           <a class="nav-link" href="#">Home</a>
@@ -40,14 +40,16 @@
         <li class="nav-item">
           <a class="nav-link" href="#scrollspyHeading4">Contacts</a>
         </li>
-        <div class="but col-5">
-
-          <button type="button" class="btn bt btn-su "  data-bs-toggle="modal" data-bs-target="#SignIn">Sign in</button>
-          <button type="button" class="btn ua btn-su">Sign up</button>
-        </div>
+        
       </ul>
+      
 
     </div>
+    <div class="but">
+
+          <button type="button" class="btn bt btn-su "  data-bs-toggle="modal" data-bs-target="#SignIn">Sign in</button>
+          <button type="button" class="btn ua btn-su" data-bs-toggle="modal" data-bs-target="#SignUp">Sign up</button>
+        </div>
   </nav>
   <div class="container">
 
@@ -61,8 +63,8 @@
           experience of our team gives you a guarantee of professional creation and support for your site. It's easy
           with us, see for yourself! Fill out the brief, and we'll do the rest for you.</h5>
         <div class="button-header _anim-items _anim-no-hide">
-          <button type="button" class="btn bu btnhd ">Sign in</button>
-          <button type="button" class="btn ua btnhd  bh">Sign up</button>
+          <button type="button" class="btn bu btnhd " data-bs-toggle="modal" data-bs-target="#SignIn">Sign in</button>
+          <button type="button" class="btn ua btnhd  bh" data-bs-toggle="modal" data-bs-target="#SignUp">Sign up</button>
         </div>
       </div>
       <div class="car col-6  _anim-items _anim-no-hide">
@@ -219,7 +221,7 @@
         </div>
       </div>
       <div class="fut-button">
-        <button type="button" class="btn button-fut bt">Contact</button>
+        <button type="button" class="btn button-fut bt" data-bs-toggle="modal" data-bs-target="#Contact">Contact</button>
       </div>
     </div>
   </div>
@@ -263,26 +265,160 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body p-0">
           <div class="row w-100 align-items-center">
-            <div class="col-5 d-none d-md-block">
-            
+            <div class="wel col-6 d-none d-md-block">
+              <div class="logomod">
+                <img class="" src="../MyProject/img/logo.svg" style="width: 55px; height: 55px;" alt="logo">
+              </div>
+
+              <div class="textmod">
+                <h3>Welcome!</h3>
+              </div>
+             <hr>
+             <p>We are glad that you have chosen our company, please log in or register so we can contact you.</p>
             </div>
-            <div class="col-md-7 col-12 text-center px-3 px-md-5">
+            <div class="col-md-6 col-12 text-center px-3 px-md-5 mt-5">
               <h4>Sign in</h4>
               <form action="" method="post">
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="text" placeholder="Name">
+                  <label for="text">Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="text" placeholder="The company name">
+                  <label for="text">The company name</label>
+                </div>
 
                 <div class="form-floating mb-3">
                   <input type="email" class="form-control" id="Input" placeholder="name@example.com">
                   <label for="Input">Email</label>
                 </div>
 
-                <div class="form-floating ">
+                <div class="form-floating mb-3">
                   <input type="password" class="form-control" id="Password" placeholder="Password">
                   <label for="Password">Password</label>
                 </div>
+
+             
                 <div class="margin_form alt">
-                  <input type="submit" name="" value="Sign in" class="btn w-100 btn_site ">
+                  <input type="submit" name="" value="Sign in" class="btn btmod w-100">
                 </div>
               </form>
+
+               <h5>Or sign in with</h5>
+               <div class="with">
+                 <button type="button" class="btn modbut  face">Facebook</button>
+                 <button type="button" class="btn  modbut twit ">Twitter</button>
+                 <button type="button" class="btn   modbut apple">Apple ID</button>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Modal up -->
+  <div class="modal  fade" id="SignUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal_sign_in modal-dialog-centered">
+      <div class="modal-content ">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body p-0">
+          <div class="row w-100 align-items-center">
+            <div class="wel col-6 d-none d-md-block">
+              <div class="logomod">
+                <img class="" src="../MyProject/img/logo.svg" style="width: 55px; height: 55px;" alt="logo">
+              </div>
+
+              <div class="textmod">
+                <h3>Welcome!</h3>
+              </div>
+             <hr>
+             <p>We are glad that you have chosen our company, please log in or register so we can contact you.</p>
+            </div>
+            <div class="col-md-6 col-12 text-center px-3 px-md-5 mt-5">
+              <h4>Sign up</h4>
+              <form action="" method="post">
+
+                
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="Input" placeholder="name@example.com">
+                  <label for="Input">Email</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="Password" placeholder="Password">
+                  <label for="Password">Password</label>
+                </div>
+
+             
+                <div class="margin_form alt">
+                  <input type="submit" name="" value="Sign in" class="btn btmod w-100">
+                </div>
+              </form>
+
+               <h5>Or sign up with</h5>
+               <div class="with">
+                 <button type="button" class="btn modbut  face">Facebook</button>
+                 <button type="button" class="btn  modbut twit ">Twitter</button>
+                 <button type="button" class="btn   modbut apple">Apple ID</button>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Modal con -->
+  <div class="modal  fade" id="Contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal_sign_in modal-dialog-centered">
+      <div class="modal-content ">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body p-0">
+          <div class="row w-100 align-items-center">
+            <div class="wel col-6 d-none d-md-block">
+              <div class="logomod">
+                <img class="" src="../MyProject/img/logo.svg" style="width: 55px; height: 55px;" alt="logo">
+              </div>
+
+              <div class="textmod">
+                <h3>Contact</h3>
+              </div>
+             <hr>
+             <p>Contact us, fill out the form and we will answer you in a short time.</p>
+            </div>
+            <div class="col-md-6 col-12 text-center px-3 px-md-5 mt-5">
+              <form action="" method="post">
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="text" placeholder="Name">
+                  <label for="text">Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="number" placeholder="Phone number">
+                  <label for="text">Phone number</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="Input" placeholder="name@example.com">
+                  <label for="Input">Email</label>
+                </div>
+
+               
+
+             
+                <div class="margin_form alt">
+                  <input type="submit" name="" value="Send" class="btn btmod w-100">
+                </div>
+              </form>
+
+              
             </div>
           </div>
         </div>

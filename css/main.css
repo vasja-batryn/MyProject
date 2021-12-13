@@ -11,6 +11,10 @@ body {
   padding-right: 50px;
   transform: translate(0px, -90%);
   transition: all 0.6s ease 0s; }
+  .navbar .collapse .navbar-nav {
+    display: flex;
+    padding-left: 180px;
+    justify-content: space-between; }
   .navbar .nav-item {
     display: flex;
     padding-left: 80px; }
@@ -23,8 +27,10 @@ body {
     display: flex;
     height: 50px;
     width: 350px;
-    margin-left: 250px;
     justify-content: end; }
+  @media (max-width: 991.98px) {
+    .navbar .but {
+      display: none; } }
   .navbar .btn-su {
     width: 150px;
     height: 45px;
@@ -438,50 +444,121 @@ footer {
     cursor: pointer;
     color: black; }
 
-.modal_sign_in {
-  width: 100%;
-  max-width: 700px;
-  justify-content: center; }
-  .modal_sign_in .modal-content {
-    position: relative;
+.modal {
+  background-color: rgba(0, 0, 0, 0.322); }
+  .modal_sign_in {
+    width: 100%;
+    max-width: 700px;
+    justify-content: center; }
+    .modal_sign_in .modal-content {
+      background-color: rgba(255, 255, 255, 0.849);
+      position: relative;
+      border-radius: 0;
+      border: none;
+      min-width: 900px;
+      min-height: 600px;
+      background-size: cover;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); }
+      .modal_sign_in .modal-content .btn-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 2; }
+    .modal_sign_in h4 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px; }
+  .modal .margin_form {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px; }
+    .modal .margin_form.alt {
+      margin-top: 35px; }
+  .modal .wel {
+    height: 500px; }
+    .modal .wel .logomod {
+      margin: 30px 50px; }
+    .modal .wel .textmod {
+      display: flex;
+      margin-left: 50px;
+      margin-top: 100px; }
+      .modal .wel .textmod h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 80px; }
+    .modal .wel hr {
+      margin-left: 50px;
+      width: 60px;
+      height: 3px; }
+    .modal .wel p {
+      margin-top: 30px;
+      margin-left: 50px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 23px;
+      color: rgba(0, 0, 0, 0.404); }
+  .modal input {
+    max-height: 45px; }
+  .modal label {
+    padding-top: 10px; }
+  .modal form {
+    margin-top: 30px;
+    margin-bottom: 40px; }
+  .modal .form-control {
+    background-color: transparent;
     border-radius: 0;
-    border: none;
-    min-width: 1200px;
-    min-height: 700px;
-    background-size: cover;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); }
-    .modal_sign_in .modal-content .btn-close {
-      position: absolute;
-      right: 20px;
-      top: 20px;
-      z-index: 2; }
-  .modal_sign_in h4 {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 44px; }
-.modal .margin_form {
-  margin-bottom: 20px; }
-  .modal .margin_form.alt {
-    margin-top: 35px; }
-.modal .png {
-  object-fit: cover;
-  height: 500px;
-  margin-left: 20px; }
-.modal input {
-  max-height: 45px;
-  padding-left: 12px; }
-.modal label {
-  padding-top: 10px;
-  padding-left: 12px; }
-.modal form {
-  margin-top: 30px; }
-.modal .form-control {
-  border-radius: 0;
-  border: 1px solid #c4c4c4; }
-  .modal .form-control:focus {
-    border: 1px solid;
-    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px; }
+    .modal .form-control:focus {
+      outline: none;
+      box-shadow: none; }
+  .modal .btmod {
+    background-color: transparent;
+    color: black;
+    width: 180px;
+    height: 55px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px 40px;
     box-shadow: none; }
+    .modal .btmod:hover {
+      background: black;
+      color: white; }
+  .modal .with {
+    display: flex;
+    justify-content: space-between; }
+  .modal .modbut {
+    margin-top: 20px;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 0; }
+    .modal .modbut:hover {
+      border-color: transparent;
+      background: transparent;
+      color: black;
+      border: 2px solid; }
+  .modal .face {
+    background-color: #1B74E4;
+    color: white; }
+    .modal .face:hover {
+      border-color: #1B74E4; }
+  .modal .twit {
+    background-color: #5DA9DD;
+    color: white; }
+    .modal .twit:hover {
+      border-color: #5DA9DD; }
+  .modal .apple {
+    background-color: black;
+    color: white; }
+    .modal .apple:hover {
+      border-color: black; }
 
 /*Scroll*/
 ::-webkit-scrollbar {
