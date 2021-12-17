@@ -404,7 +404,8 @@ body {
 
 .block_story {
     margin-top: -100px;
-    width: 700px;
+width: 100%;
+    max-width: 700px;
 
 
 }
@@ -413,7 +414,7 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: calc(14px + 10 * ((100vw - 320px) / 1920));
     line-height: 35px;
     color: rgba(0, 0, 0, 0.507);
     list-style: none;
@@ -698,6 +699,13 @@ footer {
 @media (max-width: 991.98px) {
   .page__screen{
     .screen__content{
+       .main_block{
+           margin-top: 100px;
+           .block_story{
+
+           }
+       }
+
       .block_block{
           display: flex;
           justify-content: center;
@@ -710,3 +718,5 @@ footer {
     }
   }
 }
+
+
