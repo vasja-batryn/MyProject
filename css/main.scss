@@ -71,10 +71,24 @@ body {
         box-shadow: none;
         transition: all 500ms ease;
     }
+   
 
 
 
 }
+ @media (max-width: 1399.98px) {
+     .navbar {
+      .collapse {
+        .navbar-nav{
+            padding: 0px;
+            justify-content: center;
+        }
+    }
+   .but{
+       display: none;
+   }
+}
+ }
 
 .bt {
     background-color: black;
@@ -125,7 +139,7 @@ body {
     border-radius: 5px;
 }
 
-@-webkit-keyframes fill {
+@keyframes fill {
     0% {
         width: 0%;
         height: 1px;
@@ -155,7 +169,9 @@ body {
     header {
         margin-top: 100px;
         align-items: center;
-
+        //   flex-direction: row;
+        //   display: flex;
+       
         .header-text {
 
             h1 {
@@ -167,7 +183,7 @@ body {
 
             h5 {
                 font-size: calc(14px + 10 * ((100vw - 320px) / 1920));
-                width: 700px;
+            
             }
         }
 
@@ -251,6 +267,8 @@ body {
         }
     }
 
+    
+
     .text__titlego {
         transform: translate(0px, 120%);
         opacity: 0;
@@ -287,7 +305,7 @@ body {
     }
 
     section {
-        margin-top: 100px;
+        margin-top: 150px;
 
         .bigfoto {
             text-align: center;
@@ -296,10 +314,14 @@ body {
 
         .infobf {
 
+         .krujic{
+             margin-top: -80px;
+         }
+
             .info {
                 display: flex;
                 justify-content: center;
-                margin-top: 10px;
+                
                 align-items: center;
                 flex-direction: column;
                 text-align: center;
@@ -368,7 +390,7 @@ body {
                 font-style: normal;
                 font-weight: normal;
                 font-size: calc(30px + 30 * ((100vw - 320px) / 1920));
-                line-height: 79px;
+                
             }
 
             p {
@@ -402,7 +424,8 @@ body {
         position: relative;
         overflow: hidden;
         width: 100%;
-        height: 600px;
+        height: 100%;
+        min-height: 600px;
         transform: scale(0);
         transition: all 0.8s ease 0s;
     }
@@ -412,7 +435,9 @@ body {
     }
 
     .sidebar {
-        height: 600px;
+        min-height: 600px;
+        height: 100%;
+        
         width: 35%;
         position: absolute;
         top: 0;
@@ -421,7 +446,8 @@ body {
     }
 
     .sidebar>div {
-        height: 600px;
+        height: 100%;
+        min-height: 600px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -449,6 +475,7 @@ body {
     .main-slide>div {
 
         height: 100%;
+        min-height: 600px;
         width: 100%;
     }
 
@@ -618,9 +645,6 @@ body {
                     color: black;
                 }
             }
-
-
-
         }
     }
 }
@@ -896,4 +920,60 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgba(0, 0, 0, 0.336);
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        header {
+            justify-content: center;
+            text-align: center;
+           
+            .header-text{
+                width: 60%;
+            }
+            .car{
+                margin-top: 50px;
+                display: flex;
+                margin-left: 0px;
+                justify-content: center;
+                .carousel{
+                    margin-left: 0px;
+                }
+            }
+        }
+
+        .com-info{
+            display: flex;
+            justify-content: center;
+            .com-img{
+                display: flex;
+                justify-content: center;
+            }
+            .com-txt{
+                width: 80%;
+                text-align: center;
+                p{
+                    margin-top: 50px;
+                    width: 100%;
+                    justify-content: center;
+                    font-size: calc(13px + 10 * ((100vw - 320px) / 1920));
+                }
+            }
+        }
+
+        section{
+            margin-top: -20px;
+           .infobf{
+               .info{
+                   margin-top: 50px;
+               }
+               
+               .kru{
+                   margin-top: 50px;
+               }
+               
+           }
+        }
+    }
+
 }
