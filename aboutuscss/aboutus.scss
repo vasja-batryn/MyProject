@@ -338,7 +338,7 @@ body {
 }
 
 .block_block {
-    justify-content: center;
+    justify-content: space-between;
     height: 300px;
     width: 1700px;
 
@@ -693,4 +693,20 @@ footer {
         }
     }
 
+}
+
+@media (max-width: 991.98px) {
+  .page__screen{
+    .screen__content{
+      .block_block{
+          display: flex;
+          justify-content: center;
+         .bd {
+             display: none;
+         } 
+
+        
+      }
+    }
+  }
 }

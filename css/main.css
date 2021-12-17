@@ -63,29 +63,26 @@ body {
   color: white;
   transition: all 2s;
   border-radius: 5px; }
-
-.fill li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #aaa;
-  height: 1px;
-  border-radius: 5px; }
-
-.fill li a:hover {
-  border-radius: 5px;
-  z-index: 1; }
-
-.fill li a:hover:after {
-  z-index: -10;
-  animation: fill 0.8s forwards;
-  opacity: 1;
-  border-radius: 5px; }
+  .fill li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+    border-radius: 5px; }
+  .fill li a:hover {
+    border-radius: 5px;
+    z-index: 1; }
+  .fill li a:hover:after {
+    z-index: -10;
+    animation: fill 0.8s forwards;
+    opacity: 1;
+    border-radius: 5px; }
 
 @keyframes fill {
   0% {

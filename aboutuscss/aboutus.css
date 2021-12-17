@@ -230,7 +230,7 @@ body {
   margin-top: 200px; }
 
 .block_block {
-  justify-content: center;
+  justify-content: space-between;
   height: 300px;
   width: 1700px; }
   .block_block .block {
@@ -461,5 +461,12 @@ footer {
     color: white; }
     .modal .apple:hover {
       border-color: black; }
+
+@media (max-width: 991.98px) {
+  .page__screen .screen__content .block_block {
+    display: flex;
+    justify-content: center; }
+    .page__screen .screen__content .block_block .bd {
+      display: none; } }
 
 /*# sourceMappingURL=aboutus.css.map */
