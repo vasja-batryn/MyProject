@@ -318,7 +318,8 @@ footer {
   margin-top: 27px;
   display: flex;
   background-color: rgba(0, 0, 0, 0.13);
-  height: 300px; }
+  height: 300px;
+  width: 100%; }
   footer .futer {
     width: 100%;
     height: 100%;
@@ -326,11 +327,10 @@ footer {
     justify-content: center; }
   footer .logo-footer {
     width: 100%;
-    display: flex; }
-    footer .logo-footer img {
-      margin-left: -35px; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   footer .footer-nav {
-    width: 100%;
     justify-content: center; }
     footer .footer-nav a:hover,
     footer .footer-nav a:focus {
@@ -347,10 +347,13 @@ footer {
       font-size: 16px;
       line-height: 19px; }
   footer a {
-    margin-left: 50px;
+    font-size: calc(10px + 10 * ((100vw - 320px) / 1920));
+    align-items: center;
     text-decoration: none;
     cursor: pointer;
     color: black; }
+  footer .af {
+    margin: 5px 25px; }
 
 .modal {
   background-color: rgba(0, 0, 0, 0.322); }
