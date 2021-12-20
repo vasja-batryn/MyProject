@@ -20,8 +20,7 @@ body {
       display: flex;
       align-items: center; }
     .navbar .nav-item a {
-      font-size: calc(14px + 6 * ((100vw - 320px) / 1920));
-      font-weight: 400; }
+      font-size: calc(14px + 6 * ((100vw - 320px) / 1920)); }
   .navbar .but {
     display: flex;
     height: 50px;
@@ -83,6 +82,12 @@ body {
     width: 60%;
     height: 3%;
     background: #333; } }
+@media (max-width: 1399.98px) {
+  .navbar .collapse .navbar-nav {
+    padding: 0px;
+    justify-content: center; }
+  .navbar .but {
+    display: none; } }
 .wrapper {
   min-height: 100%;
   opacity: 0;

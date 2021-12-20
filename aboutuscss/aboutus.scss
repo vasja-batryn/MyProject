@@ -35,7 +35,7 @@ body {
 
         a {
             font-size: calc(14px + 6 * ((100vw - 320px) / 1920));
-            font-weight: 400;
+            
         }
     }
 
@@ -51,6 +51,7 @@ body {
 
 
     }
+    
 
     @media (max-width: 991.98px) {
         .but {
@@ -133,6 +134,21 @@ body {
             width: 60%;
             height: 3%;
             background: #333;
+        }
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .navbar {
+        .collapse {
+            .navbar-nav {
+                padding: 0px;
+                justify-content: center;
+            }
+        }
+
+        .but {
+            display: none;
         }
     }
 }
