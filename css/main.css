@@ -212,11 +212,13 @@ body {
           width: 110px;
           height: 110px; }
       .container section .infobf .info .txtinfo {
-        width: 350px;
         font-weight: 400; }
         .container section .infobf .info .txtinfo h4 {
+          font-size: calc(30px + 10 * ((100vw - 320px) / 1920));
           font-weight: 500; }
         .container section .infobf .info .txtinfo p {
+          padding: 0 30px;
+          font-size: calc(11px + 7 * ((100vw - 320px) / 1920));
           margin-top: 40px;
           color: #AFAFB0; }
   .container .com-info {
@@ -240,6 +242,7 @@ body {
         font-weight: normal;
         font-size: calc(30px + 30 * ((100vw - 320px) / 1920)); }
       .container .com-info .com-txt p {
+        margin-top: 80px;
         font-style: normal;
         font-weight: normal;
         font-size: calc(10px + 10 * ((100vw - 320px) / 1920));
@@ -252,7 +255,7 @@ body {
     .container .zagolovoc h3 {
       font-style: normal;
       font-weight: normal;
-      font-size: 65px;
+      font-size: calc(55px + 15 * ((100vw - 320px) / 1920));
       line-height: 79px; }
   .container .conta {
     margin-top: 100px;
@@ -324,6 +327,28 @@ body {
     transform: translateY(-100%);
     border-top-right-radius: 5px;
     border-top-left-radius: 5px; }
+  .container .pro-button {
+    margin-top: 50PX;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .container .pro-button .button-pro {
+      background-color: black;
+      color: white;
+      margin-top: 30px;
+      width: 180px;
+      height: 55px;
+      border-radius: 10px;
+      border: 2px solid black;
+      padding: 5px 40px;
+      box-shadow: none; }
+    .container .pro-button .btprr {
+      margin-left: 20px;
+      background-color: black;
+      color: white; }
+      .container .pro-button .btprr:hover {
+        background: rgba(0, 0, 0, 0);
+        color: black; }
   .container .first-fut {
     width: 100%;
     flex-wrap: wrap;
@@ -420,11 +445,10 @@ footer {
     justify-content: center; }
   footer .logo-footer {
     width: 100%;
-    display: flex; }
-    footer .logo-footer img {
-      margin-left: -35px; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   footer .footer-nav {
-    width: 100%;
     justify-content: center; }
     footer .footer-nav a:hover,
     footer .footer-nav a:focus {
@@ -441,10 +465,13 @@ footer {
       font-size: 16px;
       line-height: 19px; }
   footer a {
-    margin-left: 50px;
+    font-size: calc(10px + 10 * ((100vw - 320px) / 1920));
+    align-items: center;
     text-decoration: none;
     cursor: pointer;
     color: black; }
+  footer .af {
+    margin: 5px 25px; }
 
 .modal {
   background-color: rgba(0, 0, 0, 0.322); }
@@ -457,6 +484,8 @@ footer {
       position: relative;
       border-radius: 0;
       border: none;
+      width: 100%;
+      height: 100%;
       min-width: 900px;
       min-height: 600px;
       background-size: cover;
@@ -609,5 +638,52 @@ footer {
       margin-top: 50px; }
     .container section .infobf .kru {
       margin-top: 50px; } }
+@media (max-width: 767.98px) {
+  header .header-text .button-header .btnhd {
+    width: 127px;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid black;
+    font-size: 13px; }
+
+  .modal_sign_in {
+    width: 100%;
+    max-width: 400px;
+    justify-content: center; }
+    .modal_sign_in .modal-content {
+      width: 100%;
+      height: 100%;
+      min-width: 300px;
+      min-height: 600px; }
+    .modal_sign_in .da {
+      margin-left: 10px; } }
+@media (max-width: 559.98px) {
+  .conta {
+    display: none; }
+
+  header .header-text h5 {
+    display: none; }
+  header .header-text .button-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    header .header-text .button-header .btnhd {
+      margin: 15px 0; }
+
+  section .infobf {
+    margin-top: 50px; }
+
+  .modal_sign_in {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center; }
+    .modal_sign_in .modal-content {
+      width: 100%;
+      height: 100%;
+      min-width: 300px;
+      min-height: 600px; }
+    .modal_sign_in .da {
+      margin-left: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
