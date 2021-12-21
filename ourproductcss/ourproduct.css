@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .navbar {
   background-color: rgba(255, 255, 255, 0.637);
   padding-top: 10px;
   padding-left: 50px;
   padding-right: 50px; }
+  .navbar .navbar-brand img {
+    width: calc(40px + 15 * ((100vw - 320px) / 1920));
+    height: calc(40px + 15 * ((100vw - 320px) / 1920)); }
   .navbar .collapse .navbar-nav {
     display: flex;
     padding-left: 180px;
@@ -57,7 +60,7 @@ body {
     right: 0;
     margin: auto;
     width: 0%;
-    content: '.';
+    content: ".";
     color: transparent;
     background: #aaa;
     height: 1px;
@@ -120,7 +123,7 @@ body {
       z-index: 2; }
       .wrapper .page .abus h1 {
         font-size: calc(70px + 50 * ((100vw - 320px) / 1920));
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 700;
         word-spacing: 50px;
         color: rgba(0, 0, 0, 0.801); }
@@ -248,7 +251,7 @@ body {
   cursor: pointer; }
   .content .block h4 {
     position: absolute;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 40px;
     opacity: 1; }
   .content .block:hover img {
@@ -331,7 +334,7 @@ footer {
       width: 600px; }
       .modal_sign_in .info p {
         color: white;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 20px; }
     .modal_sign_in .har {
       align-items: center;
@@ -399,7 +402,7 @@ footer {
       margin-left: 50px;
       margin-top: 100px; }
       .modalka .wel .textmod h3 {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: bold;
         font-size: 80px; }
     .modalka .wel hr {
@@ -461,15 +464,15 @@ footer {
       color: black;
       border: 2px solid; }
   .modalka .face {
-    background-color: #1B74E4;
+    background-color: #1b74e4;
     color: white; }
     .modalka .face:hover {
-      border-color: #1B74E4; }
+      border-color: #1b74e4; }
   .modalka .twit {
-    background-color: #5DA9DD;
+    background-color: #5da9dd;
     color: white; }
     .modalka .twit:hover {
-      border-color: #5DA9DD; }
+      border-color: #5da9dd; }
   .modalka .apple {
     background-color: black;
     color: white; }
@@ -529,7 +532,7 @@ footer {
         margin-left: 50px;
         margin-top: 100px; }
         .modalka .wel .textmod h3 {
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
           font-weight: bold;
           font-size: 80px; }
       .modalka .wel hr {
@@ -591,15 +594,15 @@ footer {
         color: black;
         border: 2px solid; }
     .modalka .face {
-      background-color: #1B74E4;
+      background-color: #1b74e4;
       color: white; }
       .modalka .face:hover {
-        border-color: #1B74E4; }
+        border-color: #1b74e4; }
     .modalka .twit {
-      background-color: #5DA9DD;
+      background-color: #5da9dd;
       color: white; }
       .modalka .twit:hover {
-        border-color: #5DA9DD; }
+        border-color: #5da9dd; }
     .modalka .apple {
       background-color: black;
       color: white; }

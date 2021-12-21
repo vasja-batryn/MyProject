@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .navbar {
   background-color: rgba(255, 255, 255, 0.637);
@@ -9,6 +9,9 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   /* Keyframes */ }
+  .navbar .navbar-brand img {
+    width: calc(40px + 15 * ((100vw - 320px) / 1920));
+    height: calc(40px + 15 * ((100vw - 320px) / 1920)); }
   .navbar .collapse .navbar-nav {
     display: flex;
     padding-left: 180px;
@@ -58,7 +61,7 @@ body {
     right: 0;
     margin: auto;
     width: 0%;
-    content: '.';
+    content: ".";
     color: transparent;
     background: #aaa;
     height: 1px;
@@ -121,7 +124,7 @@ body {
       z-index: 2; }
       .wrapper .page .abus h1 {
         font-size: calc(70px + 50 * ((100vw - 320px) / 1920));
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 700;
         word-spacing: 50px;
         color: rgba(0, 0, 0, 0.801); }
@@ -251,10 +254,10 @@ body {
     .block_block .block h4 {
       margin-top: -50px;
       font-size: 100px;
-      font-family: 'Oswald'; }
+      font-family: "Oswald"; }
     .block_block .block h5 {
       margin-top: -150px;
-      font-family: 'Roboto';
+      font-family: "Roboto";
       font-size: 15px;
       font-weight: 500; }
 
@@ -394,7 +397,7 @@ footer {
       margin-left: 50px;
       margin-top: 100px; }
       .modal .wel .textmod h3 {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: bold;
         font-size: 80px; }
     .modal .wel hr {
@@ -456,15 +459,15 @@ footer {
       color: black;
       border: 2px solid; }
   .modal .face {
-    background-color: #1B74E4;
+    background-color: #1b74e4;
     color: white; }
     .modal .face:hover {
-      border-color: #1B74E4; }
+      border-color: #1b74e4; }
   .modal .twit {
-    background-color: #5DA9DD;
+    background-color: #5da9dd;
     color: white; }
     .modal .twit:hover {
-      border-color: #5DA9DD; }
+      border-color: #5da9dd; }
   .modal .apple {
     background-color: black;
     color: white; }
@@ -498,10 +501,10 @@ footer {
       .page__screen .screen__content .main_block .block_block .block h4 {
         margin-top: -50px;
         font-size: 80px;
-        font-family: 'Oswald'; }
+        font-family: "Oswald"; }
       .page__screen .screen__content .main_block .block_block .block h5 {
         margin-top: -130px;
-        font-family: 'Roboto';
+        font-family: "Roboto";
         font-size: 12px;
         font-weight: 500; }
     .page__screen .screen__content .main_block .block_block .bd {

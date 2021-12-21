@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden; }
 
 .navbar {
@@ -11,6 +11,9 @@ body {
   padding-right: 50px;
   transform: translate(0px, -90%);
   transition: all 0.6s ease 0s; }
+  .navbar .navbar-brand img {
+    width: calc(40px + 15 * ((100vw - 320px) / 1920));
+    height: calc(40px + 15 * ((100vw - 320px) / 1920)); }
   .navbar .collapse .navbar-nav {
     display: flex;
     padding-left: 180px;
@@ -70,7 +73,7 @@ body {
     right: 0;
     margin: auto;
     width: 0%;
-    content: '.';
+    content: ".";
     color: transparent;
     background: #aaa;
     height: 1px;
@@ -106,7 +109,7 @@ body {
     margin-top: 100px;
     align-items: center; }
     .container header .header-text h1 {
-      font-family: 'Oswald';
+      font-family: "Oswald";
       font-weight: 400;
       font-size: calc(30px + 80 * ((100vw - 320px) / 1920));
       margin-bottom: 50px; }
@@ -159,7 +162,7 @@ body {
       background-position: center center; }
     .container header .carousel-cell:before {
       display: block;
-      content: ''; }
+      content: ""; }
     .container header .car {
       transform: translate(100%, 0px);
       transition: all 0.8s ease 0s; }
@@ -220,7 +223,7 @@ body {
           padding: 0 30px;
           font-size: calc(11px + 7 * ((100vw - 320px) / 1920));
           margin-top: 40px;
-          color: #AFAFB0; }
+          color: #afafb0; }
   .container .com-info {
     align-items: center;
     margin-top: 150px; }
@@ -248,7 +251,7 @@ body {
         font-size: calc(10px + 10 * ((100vw - 320px) / 1920));
         line-height: 25px;
         width: 80%;
-        color: #AFAFB0; }
+        color: #afafb0; }
   .container .zagolovoc {
     margin-top: 80px;
     text-align: center; }
@@ -328,7 +331,7 @@ body {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px; }
   .container .pro-button {
-    margin-top: 50PX;
+    margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: center; }
@@ -514,7 +517,7 @@ footer {
       margin-left: 50px;
       margin-top: 100px; }
       .modal .wel .textmod h3 {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: bold;
         font-size: 80px; }
     .modal .wel hr {
@@ -576,15 +579,15 @@ footer {
       color: black;
       border: 2px solid; }
   .modal .face {
-    background-color: #1B74E4;
+    background-color: #1b74e4;
     color: white; }
     .modal .face:hover {
-      border-color: #1B74E4; }
+      border-color: #1b74e4; }
   .modal .twit {
-    background-color: #5DA9DD;
+    background-color: #5da9dd;
     color: white; }
     .modal .twit:hover {
-      border-color: #5DA9DD; }
+      border-color: #5da9dd; }
   .modal .apple {
     background-color: black;
     color: white; }
@@ -638,7 +641,7 @@ footer {
       margin-top: 50px; }
     .container section .infobf .kru {
       margin-top: 50px; } }
-@media (max-width: 767.98px) {
+@media (max-width: 769px) {
   header .header-text .button-header .btnhd {
     width: 127px;
     height: 40px;
@@ -653,11 +656,24 @@ footer {
     .modal_sign_in .modal-content {
       width: 100%;
       height: 100%;
-      min-width: 300px;
-      min-height: 600px; }
+      min-width: 300px; }
+      .modal_sign_in .modal-content .modal-body .if .wel {
+        display: none; }
     .modal_sign_in .da {
-      margin-left: 10px; } }
+      margin-left: 10px; }
+      .modal_sign_in .da .with .modbut {
+        margin-bottom: 20px;
+        width: 80px;
+        height: 20px;
+        border-radius: 7px;
+        font-size: 12px; } }
 @media (max-width: 559.98px) {
+  .navbar .navbar-collapse {
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.692); }
+    .navbar .navbar-collapse .navbar-nav {
+      margin-left: auto; }
+
   .conta {
     display: none; }
 
@@ -681,9 +697,30 @@ footer {
     .modal_sign_in .modal-content {
       width: 100%;
       height: 100%;
+      min-width: 300px; }
+    .modal_sign_in .da {
+      margin-left: 10px; }
+      .modal_sign_in .da .with .modbut {
+        width: 80px;
+        height: 20px;
+        border-radius: 7px;
+        font-size: 12px; } }
+@media (max-width: 425.98px) {
+  .modal .modal-content {
+    margin-left: 100px; } }
+@media (max-width: 375.98px) {
+  .modal_sign_in {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center; }
+    .modal_sign_in .modal-content {
+      width: 100%;
       min-width: 300px;
-      min-height: 600px; }
+      margin-left: 50px; }
     .modal_sign_in .da {
       margin-left: 10px; } }
+@media (max-width: 320.98px) {
+  .modal .modal-content {
+    margin-left: 0; } }
 
 /*# sourceMappingURL=main.css.map */
